@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, inital-scale=1.0">
+	<title>IdekCTF Home</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/23a7380aaf.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fas fa-chevron-circle-right" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Writeups</a></li>
+					<li><a href="">CTF Records</a></li>
+					<li><a href="">About</a></li>
+				</ul>
+			</div>
+			<i class="fas fa-bars" onclick="showMenu()"></i>
+		</nav>
+
+
+<div class="text-box">
+	<h1>Idek CTF Team Page</h1>
+	<p>Playing CTF's is what we do. If you would like to play with us or hang out <br>and chat, please feel free contact us from our About Page</p> 
+	<a href="" class="hero-btn">Learn More Here</a>
+</div>
+
+</section>
+
+<!-----Upcoming CTF's----->
+<section class="course">
+	<h1>Upcoming CTF's</h1>
+	<p>A short list of CTF's that we might or might not compete in.</p>
+	<div class="row">
+		<div class="upcoming-col">
+			<h3>Imaginary CTF</h3>
+			<p>A practice CTF that we will be competeing in for fun. July 23 to July 27. Categories are: web, forensics, rev, crypto, bin exp. Prizes are 1st: $250 2nd: $200 3rd: $150 4th: $125 5th: $100</p>
+			<a href="" class="ictf-btn">Play along with us!</a>
+		</div>
+		<div class="upcoming-col">
+			<h3>UIUC CTF</h3>
+			<p>This CTF is hosted by UIUC, but still mainly for practice competition. July 31 to Aug 2. Categories are: web, forensics, rev, crypto, bin exp, etc. Prizes are 1st: $2048 2nd: $1024 3rd: $512 4-10th: $256. Another $2000 in writeup prizes.</p>
+			<a href="" class="uctf-btn">Play along with us!</a>
+		</div>
+	</div>
+</section>
+
+
+<section class="Writeups">
+	<h1>Writeups</h1>
+	<p>Our Short Collection of Past Writeups</p>
+	
+	<div class="row">
+		<div class="writeup-col">
+			<img src="images/hsctf.png">
+			<div class="layer">
+				<h3>hsCTF</h3>
+			</div>
+		</div>
+		<div class="writeup-col">
+			<img src="images/redpwn.png">
+			<div class="layer">
+				<h3>redpwnCTF</h3>
+			</div>
+		</div>
+		<div class="writeup-col">
+			<img src="images/lit.png">
+			<div class="layer">
+				<h3>litCTF</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="footer">
+	<h3>Contact Us</h3>
+	<p>Follow us on GitHub. Chat with us on Discord. Email us. We'd love to hear your feedback on this website!</p>
+	<div class="icons">
+		<i class="fas fa-envelope-square"></i>
+		<i class="fab fa-github"></i>
+		<i class="fab fa-discord"></i>
+	</div>
+	<p>Brought to you by the offical IdekCTF team</p>
+</section>
+
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+
+</script>
+
+</body>
+</html>
